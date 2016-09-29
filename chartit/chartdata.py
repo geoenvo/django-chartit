@@ -3,7 +3,8 @@ from collections import defaultdict
 from itertools import groupby, chain, islice
 from operator import itemgetter
 # use SortedDict instead of native OrderedDict for Python 2.6 compatibility
-from django.utils.datastructures import SortedDict
+# from django.utils.datastructures import SortedDict # 20160929 Update
+from collections import OrderedDict as SortedDict # 20160929 Update
 from validation import clean_dps, clean_pdps
 from chartit.validation import clean_sortf_mapf_mts
 
